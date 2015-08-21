@@ -1,0 +1,4 @@
+CREATE DATABASE boot;
+CREATE ROLE bootuser WITH PASSWORD 'bootpassword';
+GRANT ALL PRIVILEGES ON DATABASE boot to bootuser;
+ALTER ROLE "bootuser" WITH LOGIN;
